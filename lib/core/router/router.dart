@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:login_cubit/core/constants/constants.dart';
-import 'package:login_cubit/features/signUp/presentation/mobile_reg/page/mobile_reg_view.dart';
-import 'package:login_cubit/features/signUp/presentation/otpVerify/page/otp_ver_view.dart';
+import 'package:login_cubit/pages/graph_page.dart';
+import 'package:login_cubit/pages/landing_page.dart';
 
 class AppRoutes {
   AppRoutes._();
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case Constants.OTP_VERIFY_PAGE:
-        return _getRoute(OTPVerifyPage());
+      case Constants.graphPage:
+        return _getRoute(GraphPage());
       default:
-        return _getRoute(MobileRegView());
+        return _getRoute(LandingPage());
     }
   }
 
