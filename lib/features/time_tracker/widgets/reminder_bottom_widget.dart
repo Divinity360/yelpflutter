@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:login_cubit/core/theme/theme.dart';
 import 'package:login_cubit/core/utils/colors.dart';
-import 'package:login_cubit/widgets/primaryButton.dart';
+import 'package:login_cubit/features/time_tracker/widgets/primaryButton.dart';
 
 class ReminderBottomWidget extends StatelessWidget {
 

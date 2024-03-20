@@ -64,7 +64,7 @@ class _AppBarChartState extends State<AppBarChart> {
           int rodIndex,
           ) {
         return BarTooltipItem(
-          Helpers.durationToString(Duration(minutes: rod.toY.toInt())),
+          Helpers.durationToString(Duration(seconds: rod.toY.toInt())),
           AppTheme.chartTextStyle,
         );
       },

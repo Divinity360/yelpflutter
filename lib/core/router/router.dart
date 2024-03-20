@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_cubit/core/constants/constants.dart';
-import 'package:login_cubit/pages/graph_page.dart';
-import 'package:login_cubit/pages/landing_page.dart';
+import 'package:login_cubit/features/time_tracker/pages/graph_page.dart';
+import 'package:login_cubit/features/time_tracker/pages/landing_page.dart';
 
 class AppRoutes {
   AppRoutes._();
