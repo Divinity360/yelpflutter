@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:login_cubit/core/constants/constants.dart';
-import 'package:login_cubit/features/time_tracker/pages/graph_page.dart';
-import 'package:login_cubit/features/time_tracker/pages/landing_page.dart';
+import 'package:login_cubit/features/restaurants/presentation/culinary_roulette/pages/culinary_roulette_page.dart';
+import 'package:login_cubit/features/restaurants/presentation/landing_page/landing_page.dart';
+import 'package:login_cubit/features/restaurants/presentation/mystery_search/pages/mystery_search_page.dart';
+
 
 class AppRoutes {
   AppRoutes._();
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case Constants.graphPage:
-        return _getRoute(GraphPage());
+      case Constants.mysterySearchPage:
+        return _getRoute(MysterySearchPage());
+      case Constants.culinaryRoulettePage:
+        return _getRoute(CulinaryRoulettePage());
       default:
         return _getRoute(LandingPage());
     }

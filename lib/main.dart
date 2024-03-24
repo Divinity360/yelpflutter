@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:login_cubit/core/router/router.dart';
 import 'package:login_cubit/core/theme/theme.dart';
-import 'package:login_cubit/features/time_tracker/bloc/time_tracker_bloc.dart';
+import 'package:login_cubit/core/utils/injections.dart';
 
-void main() => runApp(BlocProvider(
-    create: (_) => TimeTrackerBloc()..add(TimeTrackerEvent.timerStarted()),
-    child: LoginCubitApp()));
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  initInjections();
+  await dotenv.load(fileName: '.env');
+  runApp(App());
+}
 
-class LoginCubitApp extends StatelessWidget {
+class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

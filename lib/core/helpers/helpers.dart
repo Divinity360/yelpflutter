@@ -10,24 +10,6 @@ class Helpers {
     ));
   }
 
-  static String durationToString(Duration duration) {
-    final negativeSign = duration.isNegative ? '-' : '';
-    final twoDigitMinutes = duration.inMinutes.remainder(60).abs();
-    final twoDigitSeconds = duration.inSeconds.remainder(60).abs();
-    return duration.inHours >= 1
-        ? '$negativeSign${duration.inHours}h ${twoDigitMinutes}m'
-        : duration.inMinutes >= 1 ? '${twoDigitMinutes}m' :'${twoDigitSeconds}s';
-  }
-
-  static String durationToFullTimeString(Duration duration) {
-    final negativeSign = duration.isNegative ? '-' : '';
-    final twoDigitMinutes = duration.inMinutes.remainder(60).abs();
-    final twoDigitSeconds = duration.inSeconds.remainder(60).abs();
-    return duration.inMinutes >= 1
-        ? '$negativeSign${twoDigitMinutes}min ${twoDigitSeconds}s'
-        : '${twoDigitSeconds}s';
-  }
-
   static Future<dynamic> modalBottomSheetMenu(BuildContext context, Widget widget) {
     return showModalBottomSheet(
         context: context,

@@ -1,55 +1,46 @@
-# Divinity Project
+# Yelp APP
+Complete Flutter Application with Bloc (state management), Freezed(code generator for data-classes), Clean architecture and GetIt (dependency injection).
 
-A  project created in flutter using Dio and Bloc. Boilerplate supports both web and mobile, clone the appropriate branches mentioned below:
+
+<video src='https://youtube.com/shorts/EVQGPqmY8SQ?feature=share'/>
+
+## Features
+- API REST (Yelp)
+- Restaurant Search
+- Surprise reveal countdown
+- Roulette Spinner
 
 
-## Installation
+## Setup project
 
-For Mobile
-
+Download project
 ```bash
-https://github.com/Divinity360/fluttertest/tree/master (stable channel)
+git clone https://github.com/divinity360/yelpflutter
 ```
 
-## Usage
-
-Step 1:
-
-Download or clone this repo by using the link below:
-
+Get flutter dependencies
 ```bash
-https://github.com/Divinity360/fluttertest.git
+flutter pub get
 ```
 
-Step 2:
 
-Go to project root and execute the following command in console to get the required dependencies:
+You need to create an account at https://www.yelp.com/developers/ to get a personal API KEY
 
-```bash
-flutter pub get 
-```
-
-Step 3:
-
-This project uses inject library that works with code generation, execute the following command to generate files:
+Create an env file and input the api key in the format below
 
 ```bash
-flutter packages pub run build_runner build --delete-conflicting-outputs
+YELP_API_KEY = {Yelp_KEY}
 ```
 
-or watch command in order to keep the source code synced automatically:
+To generate the freezed data-classes using the code generator, Execute the following comand
+
 ```bash
-flutter packages pub run build_runner watch
+flutter pub run build_runner build --delete-conflicting-outputs
 ```
 
-## Project Features:
 
-Login
+Run the app
+```bash
+flutter run
+```
 
-Home
-
-Routing
-
-Dio
-
-Validation
