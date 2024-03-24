@@ -81,6 +81,7 @@ class CulinaryRouletteBloc
     return super.close();
   }
 
+  /// Emit search successful state based on selected restaurant
   Future _onSelectedRestaurantSet(
       _SelectedRestaurantSet event, Emitter<CulinaryRouletteState> emit) async {
     emit(state.copyWith(
