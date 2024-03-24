@@ -1,7 +1,6 @@
 # Yelp APP
 Complete Flutter Application with Bloc (state management), Freezed(code generator for data-classes), Clean architecture and GetIt (dependency injection).
 
-<video src='https://youtube.com/shorts/EVQGPqmY8SQ?feature=share'/>
 
 ## Features
 - API REST (Yelp)
